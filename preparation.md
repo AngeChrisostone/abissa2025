@@ -51,3 +51,8 @@ Participez à cet événement exceptionnel pour célébrer nos racines, notre cu
 ---
 
 **L'Abissa : Une célébration de l'identité, une invitation à l'unité.**
+
+## Membres de l'equipe
+- Niamke Yalla Ange Chrisostone
+- Adnane Boukari
+- Ezeckiel Affotchepko

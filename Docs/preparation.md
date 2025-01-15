@@ -40,7 +40,7 @@ En 2025, nous vous invitons à vivre une expérience inoubliable sous le thème 
 
 ## Couleurs prévues pour le site web
 
-- **Couleur principale** :Le bleu #039ED7 représente la profondeur culturelle de l’Abissa et la connexion spirituelle avec les traditions.
+- **Couleur principale** :Le bleu #035B87 représente la profondeur culturelle de l’Abissa et la connexion spirituelle avec les traditions.
 
 ## Rejoignez-nous !
 

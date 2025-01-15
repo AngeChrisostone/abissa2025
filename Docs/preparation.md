@@ -40,9 +40,7 @@ En 2025, nous vous invitons à vivre une expérience inoubliable sous le thème 
 
 ## Couleurs prévues pour le site web
 
-- **Couleur principale** : #FFD700 (Or, pour symboliser la richesse culturelle)
-- **Couleur secondaire** : #008000 (Vert, pour représenter la nature et l'harmonie)
-- **Couleur d'accentuation** : #800080 (Violet, pour la spiritualité et la royauté)
+- **Couleur principale** :Le bleu #039ED7 représente la profondeur culturelle de l’Abissa et la connexion spirituelle avec les traditions.
 
 ## Rejoignez-nous !
 

@@ -76,8 +76,8 @@ export default function Accueil() {
                     <TbClockHour4Filled /> <span className='ml-2'>HEURE : 14h - 21h</span>
                 </div>
                 <div className='flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4'>
-                    <button className='bg-[#035B87] px-6 py-2 rounded-lg text-white text-sm sm:text-lg'>Participer</button>
-                    <button className='bg-[#035B87] px-6 py-2 rounded-lg text-white text-sm sm:text-lg'>Plus d'infos</button>
+                    <button className='bg-[#035B87] px-6 py-2 rounded-lg text-white text-sm sm:text-lg hover:bg-[#83afc4]'>Participer</button>
+                    <button className='bg-[#035B87] px-6 py-2 rounded-lg text-white text-sm sm:text-lg hover:bg-[#83afc4]'>Plus d'infos</button>
                 </div>
             </div>
               {/* Annexes */}
@@ -92,7 +92,7 @@ export default function Accueil() {
                         width={283}
                     />
                     <p className='text-center text-white'>CONCERT GRATUIT</p>
-                    <button className='bg-[#ffffff] p-[10px] rounded-[12px] text-[10px] text-[#035B87] mt-2 mb-4'>Participer</button>
+                    <button className='bg-[#ffffff] p-[10px] rounded-[12px] text-[10px] text-[#035B87] mt-2 mb-4 hover:bg-[#8dd0e3]'>Participer</button>
                 </div>
 
                 {/* Activité 2 */}
@@ -103,7 +103,7 @@ export default function Accueil() {
                         width={283}
                     />
                     <p className='text-center text-white'>CONCERT GRATUIT</p>
-                    <button className='bg-[#ffffff] p-[10px] rounded-[12px] text-[10px] text-[#035B87] mt-2 mb-4'>Participer</button>
+                    <button className='bg-[#ffffff] p-[10px] rounded-[12px] text-[10px] text-[#035B87] mt-2 mb-4 hover:bg-[#8dd0e3]'>Participer</button>
                 </div>
 
                 {/* Activité 3 */}
@@ -114,7 +114,7 @@ export default function Accueil() {
                         width={283}
                     />
                     <p className='text-center text-white'>CONCERT GRATUIT</p>
-                    <button className='bg-[#ffffff] p-[10px] rounded-[12px] text-[10px] text-[#035B87] mt-2 mb-4'>Participer</button>
+                    <button className='bg-[#ffffff] p-[10px] rounded-[12px] text-[10px] text-[#035B87] mt-2 mb-4 hover:bg-[#8dd0e3] '>Participer</button>
                 </div>
             </div>
 

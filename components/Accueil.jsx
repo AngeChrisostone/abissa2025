@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import Banniere from '@/public/img/roi2.jpg'
-import ImageSect1 from '@/public/img/danse2.jpg'
-import Ambiance from '@/public/img/ambiance2.jpg'
+import Banniere from '@/public/img/roi2.webp'
+import ImageSect1 from '@/public/img/danse2.webp'
+import Ambiance from '@/public/img/ambiance2.webp'
 import { IoLocationSharp } from "react-icons/io5"
 import { BsCalendar2DateFill } from "react-icons/bs"
 import { TbClockHour4Filled } from "react-icons/tb"
-import Artiste1 from '@/public/img/activites.jpg'
-import Artiste2 from '@/public/img/activites2.jpg'
-import Artiste3 from '@/public/img/activites3.jpg'
+import Artiste1 from '@/public/img/activites.webp'
+import Artiste2 from '@/public/img/activites2.webp'
+import Artiste3 from '@/public/img/activites3.webp'
 
 export default function Accueil() {
     return (

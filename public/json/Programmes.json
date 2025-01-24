@@ -1,0 +1,101 @@
+{
+  "days": [
+    {
+      "id": "1",
+      "date": "Samedi 19 octobre 2025",
+      "events": [
+        { "id": "1-1", "text": "10h00 : Cérémonie d'ouverture avec les chefs traditionnels." },
+        { "id": "1-2", "text": "14h00 : Parade d'ouverture avec les sept clans N'zima." },
+        { "id": "1-3", "text": "19h00 : Soirée culturelle avec danses et chants traditionnels." }
+      ]
+    },
+    {
+      "id": "2",
+      "date": "Dimanche 20 octobre 2025",
+      "events": [
+        { "id": "2-1", "text": "09h00 : Messe traditionnelle et bénédiction ancestrale." },
+        { "id": "2-2", "text": "13h00 : Exposition artisanale et marché local." },
+        { "id": "2-3", "text": "18h00 : Spectacle de danses traditionnelles." }
+      ]
+    },
+    {
+      "id": "3",
+      "date": "Lundi 21 octobre 2025",
+      "events": [
+        { "id": "3-1", "text": "10h00 : Conférences sur la culture N'zima." },
+        { "id": "3-2", "text": "15h00 : Ateliers de tissage et de sculpture." },
+        { "id": "3-3", "text": "20h00 : Projection de documentaires sur l'Abissa." }
+      ]
+    },
+    {
+      "id": "4",
+      "date": "Mardi 22 octobre 2025",
+      "events": [
+        { "id": "4-1", "text": "10h00 : Début des critiques sociales (Maamaamulé)." },
+        { "id": "4-2", "text": "14h00 : Performances des poètes chansonniers." },
+        { "id": "4-3", "text": "19h00 : Soirée de contes et légendes N'zima." }
+      ]
+    },
+    {
+      "id": "5",
+      "date": "Mercredi 23 octobre 2025",
+      "events": [
+        { "id": "5-1", "text": "10h00 : Continuation des critiques sociales." },
+        { "id": "5-2", "text": "16h00 : Concours de danse traditionnelle." },
+        { "id": "5-3", "text": "20h00 : Concert d'artistes locaux." }
+      ]
+    },
+    {
+      "id": "6",
+      "date": "Jeudi 24 octobre 2025",
+      "events": [
+        { "id": "6-1", "text": "09h00 : Marche pour la paix et la réconciliation." },
+        { "id": "6-2", "text": "14h00 : Démonstration de rituels ancestraux." },
+        { "id": "6-3", "text": "18h00 : Soirée gastronomique." }
+      ]
+    },
+    {
+      "id": "7",
+      "date": "Vendredi 25 octobre 2025",
+      "events": [
+        { "id": "7-1", "text": "10h00 : Jeux traditionnels pour enfants." },
+        { "id": "7-2", "text": "15h00 : Exposition de masques sacrés." },
+        { "id": "7-3", "text": "19h00 : Spectacle de feu et tambours." }
+      ]
+    },
+    {
+      "id": "8",
+      "date": "Samedi 26 octobre 2025",
+      "events": [
+        { "id": "8-1", "text": "11h00 : Parade des masques." },
+        { "id": "8-2", "text": "16h00 : Performances artistiques." },
+        { "id": "8-3", "text": "20h00 : Soirée dansante." }
+      ]
+    },
+    {
+      "id": "9",
+      "date": "Dimanche 27 octobre 2025",
+      "events": [
+        { "id": "9-1", "text": "10h00 : Messe de clôture des rituels." },
+        { "id": "9-2", "text": "14h00 : Spectacle de contes et chants." },
+        { "id": "9-3", "text": "19h00 : Concert de clôture." }
+      ]
+    },
+    {
+      "id": "10",
+      "date": "Lundi 28 octobre au Samedi 2 novembre 2025",
+      "events": [
+        { "id": "10-1", "text": "Activités continues : danses, expositions, marché artisanal, critiques sociales." }
+      ]
+    },
+    {
+      "id": "11",
+      "date": "Samedi 2 novembre 2025",
+      "events": [
+        { "id": "11-1", "text": "10h00 : Cérémonie de clôture et bilan de l'Abissa." },
+        { "id": "11-2", "text": "15h00 : Derniers rituels de réconciliation." },
+        { "id": "11-3", "text": "19h00 : Grande soirée de clôture avec tous les participants." }
+      ]
+    }
+  ]
+}

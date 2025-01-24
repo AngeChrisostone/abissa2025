@@ -1,0 +1,23 @@
+{
+    "photos": [
+      { "id": "1", "src": "/img/femmes.webp", "alt": "Photo Abissa 1" },
+      { "id": "2", "src": "/img/danse2.webp", "alt": "Photo Abissa 2" },
+      { "id": "3", "src": "/img/danse.webp", "alt": "Photo Abissa 3" },
+      { "id": "4", "src": "/img/filleAbissa.webp", "alt": "Photo Abissa 4" },
+      { "id": "5", "src": "/img/hommes.webp", "alt": "Photo Abissa 5" },
+      { "id": "6", "src": "/img/petit.jpg", "alt": "Photo Abissa 6" },
+      { "id": "7", "src": "/img/fille2.jpg", "alt": "Photo Abissa 7" },
+      { "id": "8", "src": "/img/danse7.jpg", "alt": "Photo Abissa 8" },
+      { "id": "9", "src": "/img/roi7.jpg", "alt": "Photo Abissa 9" },
+      { "id": "10", "src": "/img/reine.jpg", "alt": "Photo Abissa 10" },
+      { "id": "11", "src": "/img/can.jpg", "alt": "Photo Abissa 11" },
+      { "id": "12", "src": "/img/roi 6.jpg", "alt": "Photo Abissa 12" },
+      { "id": "13", "src": "/img/danseur.jpg", "alt": "Photo Abissa 13" },
+      { "id": "14", "src": "/img/comian2.jpg", "alt": "Photo Abissa 14" },
+      { "id": "15", "src": "/img/comian.jpg", "alt": "Photo Abissa 15" },
+      { "id": "16", "src": "/img/groupefilles.jpg", "alt": "Photo Abissa 16" },
+      { "id": "17", "src": "/img/groupe.jpg", "alt": "Photo Abissa 17" },
+      { "id": "18", "src": "/img/hommegroupe.jpg", "alt": "Photo Abissa 18" }
+    ]
+  }
+  

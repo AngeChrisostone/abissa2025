@@ -53,4 +53,4 @@ Participez à cet événement exceptionnel pour célébrer nos racines, notre cu
 ## Membres de l'equipe
 - Niamke Yalla Ange Chrisostone
 - Adnane Boukari
-- Ezeckiel Affotchepko
+- Ezeckiel Affotchekpo

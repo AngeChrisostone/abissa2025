@@ -3,6 +3,8 @@ import Image from "next/image";
 import logo from '@/public/img/logo_transparent.webp';
 import { IoMdMenu } from "react-icons/io";
 import Navbar from './NavBar';
+import Banniere from '@/public/img/roi2.webp'
+
 
 export default function Header() {
   return (
@@ -17,5 +19,6 @@ export default function Header() {
         <Navbar />
       </nav>
     </header>
+    
   );
 }

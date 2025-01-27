@@ -7,8 +7,8 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Footer () {
   return (
-    <footer className=" bg-[#035B87] text-white p-4 text-[25px]  w-full">
-      <div className="text-right mr-3">Rejoignez-nous!</div>
+    <footer className=" bg-customcolor1 text-white p-4 text-[15px]  w-full">
+      <div className="text-right mr-20">Rejoignez-nous!</div>
       <div className="flex flex-col md:flex-row justify-between items-center">
         <Image
           src={logo}

@@ -11,9 +11,9 @@ export default function Histoire() {
     };
 
     return (
-        <div className="bg-gray-100 text-gray-900 min-h-screen px-4 sm:px-6 lg:px-8 py-8 max-w-7xl mx-auto">
+        <div className="text-gray-900 min-h-screen px-4 sm:px-6 lg:px-8 py-8 max-w-7xl mx-auto">
             <header className="text-center mb-8">
-                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-customcolor1">Histoire d'ABISSA</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-customcolor1">Histoire d&apos;ABISSA</h1>
                 <Image src={require('../public/img/histoire.webp')} alt="Roi" className="w-full mb-4" />
             </header>
             {data.sections.map((section) => (

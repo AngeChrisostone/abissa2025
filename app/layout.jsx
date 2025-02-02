@@ -8,7 +8,6 @@ import { useState } from 'react';
 import { metadata } from '@/components/Metadata';
 import Accueil from '@/components/Accueil';
 import Histoire from '@/components/Histoire';
-import GaleriePhotos from '@/components/GaleriesPhotos';
 import Programme from '@/components/Programme';
 import Contact from '@/components/Contact';
 import Photos from '@/components/Photos';

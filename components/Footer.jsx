@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from '@/public/img/logo_transparent.webp';
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io5";
+import SocialLinks from "@/components/LienReseauSociaux";
 
 export default function Footer() {
   return (
@@ -24,11 +23,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center">
           <div className="text-center mb-2">Rejoignez-nous!</div>
-          <div className="flex space-x-4">
-            <a href="#Facebook" className="hover:underline flex items-center"><FaFacebook size={30} /> Facebook</a>
-            <a href="#Whatsapp" className="hover:underline flex items-center"><IoLogoWhatsapp size={30} /> Whatsapp</a>
-            <a href="#Instagram" className="hover:underline flex items-center"><FaInstagram size={30} /> Instagram</a>
-          </div>
+          <SocialLinks />
         </div>
       </div>
     </footer>

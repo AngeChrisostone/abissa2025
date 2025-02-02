@@ -8,21 +8,21 @@ import Annexes from './Annexes'
 export default function Accueil() {
     return (
         <div>
-        <div>
-            {/* Bannière */}
-            <Image
-                src={Banniere}
-                alt='Image du roi'
-                layout='responsive'
-                objectFit='cover'
-            />
-        </div>
-        <div className='max-w-screen-xl mx-auto px-4'>
-            <Presentation/>
-            <Invitation/>
-            <Informations/>
-            <Annexes/>
-        </div>
+            <div>
+                {/* Bannière */}
+                <Image
+                    src={Banniere}
+                    alt='Image du roi'
+                    layout='responsive'
+                    objectFit='cover'
+                />
+            </div>
+            <div className='max-w-screen-xl mx-auto px-4'>
+                <Presentation />
+                <Invitation />
+                <Informations />
+                <Annexes />
+            </div>
         </div>
     );
 }

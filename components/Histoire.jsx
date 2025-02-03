@@ -19,7 +19,7 @@ export default function Histoire() {
             </div>
             <div className="text-gray-900 min-h-screen px-4 sm:px-6 lg:px-8 py-8 max-w-7xl mx-auto">
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-customcolor1">Histoire d&apos;ABISSA</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-customcolor1">Histoire de l&apos;ABISSA</h1>
                 </div>
                 {data.sections.map((section) => (
                     <ContenuHistoire key={section.id} section={section} showSection={showSection} toggleSection={toggleSection} />

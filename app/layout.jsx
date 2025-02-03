@@ -28,11 +28,12 @@ export default function RootLayout({ children }) {
                 <Header changePage={setPage} />
                 <main className="flex-1">
                     {
-                        page === "accueil" ? (<Accueil />) :
+                        page === "accueil" ? (<Accueil changePage={setPage}/>) :
                             page === "histoire" ? (<Histoire />) :
                                 page === "galerie" ? (<Photos />) :
                                     page === "programme" ? (<Programme />) :
-                                        page === "contact" ? (<Contact />) : null
+                                        page === "contact" ? (<Contact />) : 
+                                            page === "concert" ? (<Concert/>):null
                     }
                 </main>
                 <Footer />

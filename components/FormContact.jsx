@@ -1,4 +1,5 @@
 import React from "react";
+import BaseButton from "./BaseButton";
 
 const ContactForm = () => (
   <form className="space-y-2">
@@ -28,18 +29,12 @@ const ContactForm = () => (
       className="w-full p-2 border border-customcolor1 rounded focus:outline-none focus:ring-2"
     ></textarea>
     <div className="flex justify-between">
-      <button
-        type="reset"
-        className="px-4 py-1 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
-      >
-        Effacer
-      </button>
-      <button
-        type="submit"
-        className="px-4 py-1 bg-customcolor1 text-white rounded hover:bg-green-700"
-      >
-        Envoyer
-      </button>
+     <BaseButton styling={"delete"} type={"reset"}>
+      Effacer
+     </BaseButton>
+     <BaseButton styling={"send"} type={"submit"}>
+      Envoyer
+     </BaseButton>
     </div>
   </form>
 );

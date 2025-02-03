@@ -3,8 +3,10 @@ import Image from "next/image";
 import Artiste1 from '@/public/img/activites.webp';
 import Artiste2 from '@/public/img/activites2.webp';
 import Artiste3 from '@/public/img/activites3.webp';
+import BaseButton from "./BaseButton";
 
-export default function Annexes() {
+
+export default function Annexes({ changePage }) {
     const activities = [
         { id: 1, image: Artiste1, alt: "Artiste activité 1", description: "CONCERT GRATUIT" },
         { id: 2, image: Artiste2, alt: "Artiste activité 2", description: "CONCERT GRATUIT" },
@@ -24,7 +26,10 @@ export default function Annexes() {
                             width={283}
                         />
                         <p className="text-center text-white">{activity.description}</p>
-                        <button className="bg-white p-[10px] rounded-[12px] text-[10px] text-customcolor1 mt-2 mb-4 hover:bg-customcolor2">Participer</button>
+                        <BaseButton styling={"second"}  onClick={() => changePage("concert")}>
+                        Participer
+                        </BaseButton>
+                        
                     </div>
                 ))}
             </div>

@@ -5,7 +5,7 @@ import { TbClockHour4Filled } from "react-icons/tb"
 import BaseButton from "./BaseButton"
 
 
-export default function Informations({ changePage }){
+export default function Informations(){
     return(
     <div className='flex flex-col items-center border-b-2 border-customcolor1 p-4 lg:p-[50px] space-y-4'>
         <div className='flex items-center text-lg sm:text-[25px] lg:text-[25px] text-customcolor1'>
@@ -18,10 +18,10 @@ export default function Informations({ changePage }){
             <TbClockHour4Filled /> <span className='ml-2'>Heure : 14h - 21h</span>
         </div>
         <div className='flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4'>
-        <BaseButton styling="primary" onClick={() => changePage("concert")}>
+        <BaseButton styling="primary" >
             Participer
         </BaseButton>
-        <BaseButton styling="primary"  onClick={() => changePage("contact")}>
+        <BaseButton styling="primary">
             Plus d'infos
         </BaseButton>
         </div>

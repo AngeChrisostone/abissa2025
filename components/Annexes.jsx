@@ -6,7 +6,7 @@ import Artiste3 from '@/public/img/activites3.webp';
 import BaseButton from "./BaseButton";
 
 
-export default function Annexes({ changePage }) {
+export default function Annexes() {
     const activities = [
         { id: 1, image: Artiste1, alt: "Artiste activité 1", description: "CONCERT GRATUIT" },
         { id: 2, image: Artiste2, alt: "Artiste activité 2", description: "CONCERT GRATUIT" },
@@ -26,7 +26,7 @@ export default function Annexes({ changePage }) {
                             width={283}
                         />
                         <p className="text-center text-white">{activity.description}</p>
-                        <BaseButton styling={"second"}  onClick={() => changePage("concert")}>
+                        <BaseButton styling={"second"}>
                         Participer
                         </BaseButton>
                         

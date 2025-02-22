@@ -5,7 +5,7 @@ import Invitation from './Invitation'
 import Informations from './Informations'
 import Annexes from './Annexes'
 
-export default function Accueil({ changePage }) {
+export default function Accueil() {
     return (
         <div>
             <div>
@@ -20,8 +20,8 @@ export default function Accueil({ changePage }) {
             <div className='max-w-screen-xl mx-auto px-4'>
                 <Presentation />
                 <Invitation />
-                <Informations changePage={changePage} />
-                <Annexes changePage={changePage}/>
+                <Informations  />
+                <Annexes />
             </div>
         </div>
     );

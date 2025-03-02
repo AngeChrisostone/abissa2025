@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
  const router = useRouter();
@@ -8,19 +9,19 @@ export default function Navbar() {
  return (
   <ul className="flex flex-row justify-center items-center space-x-4">
    <li>
-    <button onClick={() => router.push("/")}>Accueil</button>
+    <Link href="/"> Accueil </Link>
    </li>
    <li>
-    <button onClick={() => router.push("/histoire")}>Histoire</button>
+    <Link href="/histoire">Histoire</Link>
    </li>
    <li>
-    <button onClick={() => router.push("/galerie")}>Galerie</button>
+    <Link href="/galerie">Galerie</Link>
    </li>
    <li>
-    <button onClick={() => router.push("/programme")}>Programme</button>
+    <Link href="/programme">Programme</Link>
    </li>
    <li>
-    <button onClick={() => router.push("/contact")}>Contact</button>
+    <Link href="/contact">Contact</Link>
    </li>
   </ul>
  );

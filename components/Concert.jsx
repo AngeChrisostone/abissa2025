@@ -1,4 +1,5 @@
 "use client";
+import emailjs from "emailjs-com";
 import Image from 'next/image';
 import Ambiance from '@/public/img/ambiance.webp'
 import React, { useState } from 'react';
@@ -11,9 +12,36 @@ export default function Concert() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Merci ${name}, votre demande de ticket a été enregistrée!`);
-    }
+        //alert(`Merci ${name}, votre demande de ticket a été enregistrée!`);
+    
 
+        const templateParams = {
+            name: name,
+            email: email,
+            to_name: "Destinataire", // Vous pouvez le modifier selon vos besoins
+        };
+
+        // Envoi de l'email
+        emailjs
+         .send(
+          'service_jf0069w',
+          'template_iltf91e',
+          templateParams,
+          'CJXXlpUYVU8m2v8P_'
+         )
+         .then(
+          (response) => {
+           console.log("SUCCESS!", response.status, response.text);
+           alert(
+            `Merci ${name}, votre demande de ticket a été enregistrée et un email de confirmation a été envoyé!`
+           );
+          },
+          (err) => {
+           console.log("FAILED...", err);
+           alert("Une erreur s'est produite lors de l'envoi de l'email.");
+          }
+         );
+    }
     return (
         <div>
             <div>

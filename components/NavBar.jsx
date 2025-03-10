@@ -2,27 +2,29 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
- const router = useRouter();
+    const { t } = useTranslation("header");
+    const router = useRouter();
 
- return (
-  <ul className="flex flex-row justify-center items-center space-x-4">
-   <li>
-    <Link href="/"> Accueil </Link>
-   </li>
-   <li>
-    <Link href="/histoire">Histoire</Link>
-   </li>
-   <li>
-    <Link href="/galerie">Galerie</Link>
-   </li>
-   <li>
-    <Link href="/programme">Programme</Link>
-   </li>
-   <li>
-    <Link href="/contact">Contact</Link>
-   </li>
-  </ul>
- );
+    return (
+        <ul className="flex flex-row justify-center items-center space-x-4">
+            <li>
+                <Link href="/">{t("header.home")}</Link>
+            </li>
+            <li>
+                <Link href="/histoire">{t("header.history")}</Link>
+            </li>
+            <li>
+                <Link href="/galerie">{t("header.gallery")}</Link>
+            </li>
+            <li>
+                <Link href="/programme">{t("header.program")}</Link>
+            </li>
+            <li>
+                <Link href="/contact">{t("header.contact")}</Link>
+            </li>
+        </ul>
+    );
 }

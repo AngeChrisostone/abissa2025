@@ -1,29 +1,27 @@
+"use client";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { metadata } from "@/components/Metadata";
+import Body from "@/components/Body";
+import { appWithTranslation } from "next-i18next";
+import MyContextProvider from "@/MyContextProvider";
 
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { metadata } from '@/components/Metadata';
+const inter = Inter({ subsets: ["latin"] });
 
-const inter = Inter({ subsets: ['latin'] });
-
-export default function RootLayout({ children }) {
-    
-
+function RootLayout({ children }) {
     return (
-        <html lang='en'>
+        <html lang="en">
             <head>
                 <title>{metadata.title}</title>
                 <meta name="description" content={metadata.description} />
             </head>
-
-            <body className="flex flex-col min-h-screen">
-                <Header />
-                <main className="flex-1">
-                   {children}
-                </main>
-                <Footer />
+            <body className={inter.className}>
+                <MyContextProvider>
+                    <Body>{children}</Body>
+                </MyContextProvider>
             </body>
         </html>
     );
 }
+
+export default appWithTranslation(RootLayout);

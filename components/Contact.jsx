@@ -8,15 +8,14 @@ export default function Contact() {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm({ mode: 'onBlur'});
-      
-      ;
+    } = useForm({ mode: "onBlur" });
 
     const onSubmit = (data) => {
         console.log("Données soumises : ", data);
         const templateParams = {
-            name: data.nom,
+            nom: data.nom,
             email: data.email,
+            message: data.message,
             to_name: "Destinataire",
         };
         emailjs.send(

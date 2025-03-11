@@ -1,7 +1,7 @@
 "use client";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useMyContext } from "@/MyContextProvider";
+import { useMyContext } from "@/provider/MyContextProvider";
 
 export default function Body({ children }) {
     const { theme } = useMyContext();

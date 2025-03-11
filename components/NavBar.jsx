@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
@@ -11,19 +10,41 @@ export default function Navbar() {
     return (
         <ul className="flex flex-row justify-center items-center space-x-4">
             <li>
-                <Link href="/">{t("header.home")}</Link>
+                <button onClick={() => router.push("/")} aria-label="Home">
+                    {t("header.home")}
+                </button>
             </li>
             <li>
-                <Link href="/histoire">{t("header.history")}</Link>
+                <button
+                    onClick={() => router.push("/histoire")}
+                    aria-label="History"
+                >
+                    {t("header.history")}
+                </button>
             </li>
             <li>
-                <Link href="/galerie">{t("header.gallery")}</Link>
+                <button
+                    onClick={() => router.push("/galerie")}
+                    aria-label="Gallery"
+                >
+                    {t("header.gallery")}
+                </button>
             </li>
             <li>
-                <Link href="/programme">{t("header.program")}</Link>
+                <button
+                    onClick={() => router.push("/programme")}
+                    aria-label="Program"
+                >
+                    {t("header.program")}
+                </button>
             </li>
             <li>
-                <Link href="/contact">{t("header.contact")}</Link>
+                <button
+                    onClick={() => router.push("/contact")}
+                    aria-label="Contact"
+                >
+                    {t("header.contact")}
+                </button>
             </li>
         </ul>
     );

@@ -7,7 +7,7 @@ import Navbar from "./NavBar";
 import { IoSunny } from "react-icons/io5";
 import { IoMdMoon } from "react-icons/io";
 import i18next from "i18next";
-import { useMyContext } from "@/MyContextProvider";
+import { useMyContext } from "@/provider/MyContextProvider";
 
 export default function Header() {
     const { theme, toggleTheme } = useMyContext();

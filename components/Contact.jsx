@@ -2,17 +2,29 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import SocialLinks from "@/components/LienReseauSociaux";
-
+import emailjs from "@emailjs/browser";
 export default function Contact() {
     const {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm();
+    } = useForm({ mode: 'onBlur'});
+      
+      ;
 
     const onSubmit = (data) => {
         console.log("Données soumises : ", data);
-        // Ajoutez ici votre logique pour envoyer les données (par exemple avec emailjs)
+        const templateParams = {
+            name: data.nom,
+            email: data.email,
+            to_name: "Destinataire",
+        };
+        emailjs.send(
+            "service_jwpuliz",
+            "template_swzth33",
+            templateParams,
+            "0nwTH5qD3incjtB0p"
+        );
     };
 
     return (

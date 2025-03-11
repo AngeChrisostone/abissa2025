@@ -4,7 +4,7 @@ import "./globals.css";
 import { metadata } from "@/components/Metadata";
 import Body from "@/components/Body";
 import { appWithTranslation } from "next-i18next";
-import MyContextProvider from "@/MyContextProvider";
+import MyContextProvider from "@/provider/MyContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +17,7 @@ function RootLayout({ children }) {
             </head>
             <body className={inter.className}>
                 <MyContextProvider>
+                    {" "}
                     <Body>{children}</Body>
                 </MyContextProvider>
             </body>

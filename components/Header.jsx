@@ -41,7 +41,8 @@ export default function Header() {
                         src={logo}
                         alt="Logo React"
                         width={90}
-                        className="cursor-pointer"
+                        height={90}
+                        style={{ objectFit: "cover" }}
                     />
                 </div>
                 <div className="hidden md:flex justify-center flex-1">

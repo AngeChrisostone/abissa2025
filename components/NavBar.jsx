@@ -1,50 +1,39 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-
+import { useState } from "react";
 export default function Navbar() {
-    const { t } = useTranslation("header");
-    const router = useRouter();
 
+    const { t } = useTranslation("header");
+    const routeur = useRouter();
     return (
         <ul className="flex flex-row justify-center items-center space-x-4">
             <li>
-                <button onClick={() => router.push("/")} aria-label="Home">
+                <Link href="/" aria-label="Home">
                     {t("header.home")}
-                </button>
+                </Link>
             </li>
             <li>
-                <button
-                    onClick={() => router.push("/histoire")}
-                    aria-label="History"
-                >
+                <Link href="/histoire" aria-label="History">
                     {t("header.history")}
-                </button>
+                </Link>
             </li>
             <li>
-                <button
-                    onClick={() => router.push("/galerie")}
-                    aria-label="Gallery"
-                >
+                <Link href="/galerie" aria-label="Gallery">
                     {t("header.gallery")}
-                </button>
+                </Link>
             </li>
             <li>
-                <button
-                    onClick={() => router.push("/programme")}
-                    aria-label="Program"
-                >
+                <Link href="/programme" aria-label="Program">
                     {t("header.program")}
-                </button>
+                </Link>
             </li>
             <li>
-                <button
-                    onClick={() => router.push("/contact")}
-                    aria-label="Contact"
-                >
+                <Link href="/contact" aria-label="Contact">
                     {t("header.contact")}
-                </button>
+                </Link>
             </li>
         </ul>
     );

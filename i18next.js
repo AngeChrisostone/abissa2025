@@ -9,10 +9,10 @@ i18n.use(Backend)
     .init({
         fallbackLng: "en",
         debug: false,
-        ns: ["header"],
-        preload: ["en", "fr", "es"], // Correction du code de langue
+        ns: ["header","footer"],
+        preload: ["en", "fr", "es"],
         interpolation: {
-            escapeValue: false, // React already does escaping
+            escapeValue: false, 
         },
         backend: {
             loadPath: "/locales/{{lng}}/{{ns}}.json",

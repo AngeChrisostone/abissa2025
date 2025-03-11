@@ -6,6 +6,8 @@ import Body from "@/components/Body";
 import { appWithTranslation } from "next-i18next";
 import MyContextProvider from "@/provider/MyContextProvider";
 
+import i18n from "@/i18next";
+
 const inter = Inter({ subsets: ["latin"] });
 
 function RootLayout({ children }) {
@@ -17,7 +19,6 @@ function RootLayout({ children }) {
             </head>
             <body className={inter.className}>
                 <MyContextProvider>
-                    {" "}
                     <Body>{children}</Body>
                 </MyContextProvider>
             </body>

@@ -3,7 +3,9 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import SocialLinks from "@/components/LienReseauSociaux";
 import emailjs from "@emailjs/browser";
+import { useMyContext } from "@/provider/MyContextProvider";
 export default function Contact() {
+    const {theme} = useMyContext();
     const {
         register,
         handleSubmit,
@@ -27,7 +29,11 @@ export default function Contact() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-white text-white p-4">
+        <div
+            className={`flex flex-col items-center justify-center min-h-screen p-4 ${
+                theme === "dark" ? "bg-dark text-white" : "bg-light text-black"
+            }`}
+        >
             <div className="w-full max-w-4xl flex flex-col lg:flex-row bg-[#035B87] text-white rounded-lg shadow-lg border-2 border-white">
                 <div className="w-full lg:w-1/2 p-4">
                     <h2 className="text-xl font-bold mb-2">CONTACTEZ NOUS</h2>

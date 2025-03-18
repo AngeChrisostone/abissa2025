@@ -1,4 +1,14 @@
 import Accueil from '@/components/Accueil';
+export const metadata = {
+    title: "Abissa | Accueil",
+    description: "Présentation du festival Abissa",
+    openGraph: {
+        title: "Abissa | Accueil",
+        description: "Présentation du festival Abissa",
+        images: ["./logo_transparent.webp"],
+    },
+};
+
 export default function Home() {
     return (
         <main className="flex-1">

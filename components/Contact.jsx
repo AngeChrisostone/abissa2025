@@ -1,14 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import SocialLinks from "@/components/LienReseauSociaux";
 import emailjs from "@emailjs/browser";
+<<<<<<< Updated upstream
 export default function Contact() {
+=======
+import { useMyContext } from "@/provider/MyContextProvider";
+
+export default function Contact() {
+    const { theme } = useMyContext();
+>>>>>>> Stashed changes
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm({ mode: "onBlur" });
+
+    const [successMessage, setSuccessMessage] = useState("");
 
     const onSubmit = (data) => {
         console.log("Données soumises : ", data);
@@ -18,12 +27,24 @@ export default function Contact() {
             message: data.message,
             to_name: "Destinataire",
         };
-        emailjs.send(
-            "service_jwpuliz",
-            "template_swzth33",
-            templateParams,
-            "0nwTH5qD3incjtB0p"
-        );
+
+        emailjs
+            .send(
+                "service_jwpuliz",
+                "template_swzth33",
+                templateParams,
+                "0nwTH5qD3incjtB0p"
+            )
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    setSuccessMessage("Message envoyé");
+                },
+                (error) => {
+                    console.error("FAILED...", error);
+                    setSuccessMessage("Erreur lors de l'envoi");
+                }
+            );
     };
 
     return (
@@ -109,6 +130,11 @@ export default function Contact() {
                             />
                         </div>
                     </form>
+                    {successMessage && (
+                        <p className="text-green-500 text-center mt-4">
+                            {successMessage}
+                        </p>
+                    )}
                 </div>
             </div>
         </div>

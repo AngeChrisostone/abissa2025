@@ -10,7 +10,7 @@ export default function Photos() {
 
     return (
         <div
-            className={`flex flex-col items-center justify-center min-h-screen p-4 ${
+            className={`flex flex-col items-center justify-center  ${
                 theme === "dark" ? "bg-dark text-white" : "bg-light text-black"
             }`}
         >

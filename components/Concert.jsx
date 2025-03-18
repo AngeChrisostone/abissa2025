@@ -1,5 +1,5 @@
 "use client";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Image from 'next/image';
 import Ambiance from '@/public/img/ambiance.webp'
 import React, { useState } from 'react';

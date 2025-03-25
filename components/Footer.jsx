@@ -20,13 +20,13 @@ export default function Footer() {
                     />
                 </div>
                 <div className="text-center flex-1 mb-4 md:mb-0">
-                    {t("footer.email")}{" "}
+                    {t("footer.email")}
                     <a
                         href="mailto:Abissa25@gmail.com"
-                        className="text-yellow-400 hover:underline"
+                        className="text-yellow-300 hover:underline"
                     >
                         : Abissa25@gmail.com
-                    </a>{" "}
+                    </a>
                     | {t("footer.phone")} : 343 576 1024
                 </div>
                 <div className="flex flex-col items-center">

@@ -7,22 +7,21 @@ import Annexes from './Annexes'
 
 export default function Accueil() {
     return (
-        <div>
-            <div>
-                {/* Bannière */}
-                <Image
-                    src={Banniere}
-                    alt='Image du roi'
-                    layout='responsive'
-                    objectFit='cover'
-                />
-            </div>
-            <div className='max-w-screen-xl mx-auto px-4'>
-                <Presentation />
-                <Invitation />
-                <Informations  />
-                <Annexes />
-            </div>
-        </div>
+     <div>
+      <div role="banner">
+       <Image
+        src={Banniere}
+        alt="Portrait du roi symbolisant la fête Abissa"
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 1280px"
+       />
+      </div>
+      <div className="max-w-screen-xl mx-auto px-4">
+       <Presentation />
+       <Invitation />
+       <Informations />
+       <Annexes />
+      </div>
+     </div>
     );
 }

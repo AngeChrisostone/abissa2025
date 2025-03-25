@@ -9,47 +9,62 @@ import { useRouter } from "next/navigation";
 
 export default function Annexes() {
  const router = useRouter();
+
  const activities = [
   {
    id: 1,
    image: Artiste1,
-   alt: "Artiste activité 1",
+   alt: "Concert gratuit en plein air - Artiste 1",
    description: "CONCERT GRATUIT",
   },
   {
    id: 2,
    image: Artiste2,
-   alt: "Artiste activité 2",
+   alt: "Spectacle culturel sur scène - Artiste 2",
    description: "CONCERT GRATUIT",
   },
   {
    id: 3,
    image: Artiste3,
-   alt: "Artiste activité 3",
+   alt: "Performance musicale traditionnelle - Artiste 3",
    description: "CONCERT GRATUIT",
   },
  ];
 
  return (
-  <div>
-   <p className="text-[25px] text-center text-customcolor1 p-[50px]">
+  <section aria-labelledby="annexes-title" className="pb-[50px]">
+   <h2
+    id="annexes-title"
+    className="text-[25px] text-center text-customcolor1 p-[50px]"
+   >
     Activités Annexes
-   </p>
+   </h2>
 
-   <div className="flex flex-col sm:flex-row justify-between items-center p-[50px] space-y-4 sm:space-y-0">
+   <div className="flex flex-col sm:flex-row justify-between items-center px-[20px] gap-6">
     {activities.map((activity) => (
      <div
       key={activity.id}
-      className="bg-customcolor1 flex flex-col items-center p-b-[15px] w-full sm:w-auto"
+      className="bg-customcolor1 flex flex-col items-center pb-[15px] w-full sm:w-auto rounded-lg shadow-md"
      >
-      <Image src={activity.image} alt={activity.alt} width={283} />
-      <p className="text-center text-white">{activity.description}</p>
-      <BaseButton styling={"second"} onClick={() => router.push("/concert")}>
+      <Image
+       src={activity.image}
+       alt={activity.alt}
+       width={283}
+       height={200}
+       style={{ objectFit: "cover" }}
+       priority={activity.id === 1}
+      />
+      <p className="text-center text-white mt-2 mb-2">{activity.description}</p>
+      <BaseButton
+       styling="second"
+       onClick={() => router.push("/concert")}
+       aria-label={`Participer à ${activity.description.toLowerCase()}`}
+      >
        Participer
       </BaseButton>
      </div>
     ))}
    </div>
-  </div>
+  </section>
  );
 }

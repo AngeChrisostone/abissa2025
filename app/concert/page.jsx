@@ -1,5 +1,6 @@
 import Concert from "@/components/Concert";
 export const metadata = {
+    metadatabase: new URL("https://acme.com"),
     title: "Abissa | Concert",
     description: "Présentation du concert d'Abissa",
     openGraph: {

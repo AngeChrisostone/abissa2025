@@ -1,5 +1,6 @@
 import Accueil from '@/components/Accueil';
 export const metadata = {
+    metadatabase: new URL("https://acme.com"),
     title: "Abissa | Accueil",
     description: "Présentation du festival Abissa",
     openGraph: {

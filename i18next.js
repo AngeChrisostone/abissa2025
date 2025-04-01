@@ -9,14 +9,15 @@ i18n.use(Backend)
     .init({
         fallbackLng: "en",
         debug: false,
-        ns: ["header","footer"],
+        ns: ["header", "footer"],
         preload: ["en", "fr", "es"],
         interpolation: {
-            escapeValue: false, 
+            escapeValue: false,
         },
         backend: {
             loadPath: "/locales/{{lng}}/{{ns}}.json",
         },
+        react: { useSuspense: false },
     });
 
 export default i18n;

@@ -66,7 +66,7 @@ export default function Contact() {
                     </p>
                     <form
                         onSubmit={handleSubmit(onSubmit)}
-                        className="flex gap-4 flex-col min-w-96"
+                        className="space-y-2 w-full"
                     >
                         <label className="flex gap-2 flex-col">
                             Nom:
@@ -75,7 +75,7 @@ export default function Contact() {
                                     required: "Champ obligatoire",
                                 })}
                                 type="text"
-                                className="border-2 rounded-lg p-2"
+                                className="border-2 rounded-lg p-2 w-full"
                             />
                             {errors.nom && (
                                 <span className="text-red-500 text-xs">
@@ -94,7 +94,7 @@ export default function Contact() {
                                     },
                                 })}
                                 type="email"
-                                className="border-2 rounded-lg p-2"
+                                className="border-2 rounded-lg p-2 w-full"
                             />
                             {errors.email && (
                                 <span className="text-red-500 text-xs">
@@ -108,7 +108,7 @@ export default function Contact() {
                                 {...register("message", {
                                     required: "Champ obligatoire",
                                 })}
-                                className="border-2 rounded-lg p-2"
+                                className="border-2 rounded-lg p-2 w-full"
                                 rows={5}
                             />
                             {errors.message && (

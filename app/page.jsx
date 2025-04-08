@@ -8,6 +8,7 @@ export const metadata = {
         description: "Présentation du festival Abissa",
         images: ["./logo_transparent.webp"],
     },
+    manifest:'/manifest.json'
 };
 
 export default function Home() {

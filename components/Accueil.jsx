@@ -22,8 +22,6 @@ export default function Accueil() {
     <Informations />
     <Annexes />
     <div>
-     {" "}
-     Telechargement:
      <InstallPrompt />
     </div>
    </div>
